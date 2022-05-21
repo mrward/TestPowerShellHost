@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DefineConstants>$(DefineConstants);POWERSHELL7</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.2.2" /> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\TestPowerShellHost\Logger.cs">
+      <Link>Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\TestPowerShellHost\PowerShellConsoleHost.cs">
+      <Link>PowerShellConsoleHost.cs</Link>
+    </Compile>
+    <Compile Include="..\TestPowerShellHost\PowerShellHost.cs">
+      <Link>PowerShellHost.cs</Link>
+    </Compile>
+    <Compile Include="..\TestPowerShellHost\PowerShellRawUserInterface.cs">
+      <Link>PowerShellRawUserInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\TestPowerShellHost\PowerShellUserInterfaceHost.cs">
+      <Link>PowerShellUserInterfaceHost.cs</Link>
+    </Compile>
+    <Compile Include="..\TestPowerShellHost\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>
