@@ -40,10 +40,12 @@ namespace MonoDevelop.PackageManagement.PowerShell.ConsoleHost
 		CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 		Guid instanceId = Guid.NewGuid ();
 
-		PSObject privateData = new PSObject ();
+		PSObject privateData;
 
 		public PowerShellHost ()
 		{
+			var powerShellPrivateData = new PowerShellHostPrivateData (ui);
+			privateData = new PSObject (powerShellPrivateData);
 		}
 
 		public override CultureInfo CurrentCulture => currentCulture;

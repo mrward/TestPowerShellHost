@@ -28,6 +28,9 @@
     <Compile Include="..\TestPowerShellHost\PowerShellUserInterfaceHost.cs">
       <Link>PowerShellUserInterfaceHost.cs</Link>
     </Compile>
+    <Compile Include="..\TestPowerShellHost\PowerShellHostPrivateData.cs">
+      <Link>PowerShellHostPrivateData.cs</Link>
+    </Compile>
     <Compile Include="..\TestPowerShellHost\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
